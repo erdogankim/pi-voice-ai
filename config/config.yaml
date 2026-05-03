@@ -1,0 +1,38 @@
+ai:
+  model: "claude-sonnet-4-5"
+  max_tokens: 1024
+  history_limit: 20  # max exchange pairs sent to Claude
+  system_prompt: |
+    Sen Türkçe konuşan, kısa ve net cevap veren bir asistansın.
+    Cevaplarını 2-3 cümleyi geçmeyecek şekilde tut.
+    Sesli okunacağı için emoji ve tablo kullanma.
+
+stt:
+  model: "whisper-1"
+  language: "tr"
+
+tts:
+  model: "tts-1"
+  voice: "alloy"
+  speed: 1.0
+
+audio:
+  sample_rate: 16000
+  channels: 1
+  recording_max_seconds: 30
+  dtype: "float32"
+
+button:
+  gpio_pin: 17
+  led_pin: 27
+  mode: "hold"  # hold = bas-tut, toggle = bas-birak
+
+paths:
+  data_dir: "data"
+  history_db: "data/history.db"
+
+ui:
+  theme: "dark"
+  font_size: 18
+  show_history: true
+  history_limit: 50

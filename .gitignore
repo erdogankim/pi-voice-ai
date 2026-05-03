@@ -18,6 +18,7 @@ recordings/
 
 # Yerel veri
 history.db
+data/*.db
 *.log
 
 # IDE
