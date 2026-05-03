@@ -18,7 +18,7 @@ git init
 git add .
 git commit -m "İlk commit: Proje dökümantasyonu ve iskelet"
 git branch -M main
-git remote add origin https://github.com/KULLANICI_ADIN/pi-voice-ai.git
+git remote add origin https://github.com/erdogankim/pi-voice-ai.git
 git push -u origin main
 ```
 

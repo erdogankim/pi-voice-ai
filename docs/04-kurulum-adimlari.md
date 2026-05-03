@@ -95,7 +95,7 @@ Butona bas-bırak — terminale yazmalı. `Ctrl+C` ile çık.
 ### C.1 Depoyu indir
 ```bash
 cd ~
-git clone https://github.com/KULLANICI_ADIN/pi-voice-ai.git
+git clone https://github.com/erdogankim/pi-voice-ai.git
 cd pi-voice-ai
 ```
 

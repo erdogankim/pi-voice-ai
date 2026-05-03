@@ -71,7 +71,7 @@ Detaylı plan → [`docs/05-yol-haritasi.md`](docs/05-yol-haritasi.md)
 ## 🚀 Hızlı Başlangıç (Donanım hazır olduğunda)
 
 ```bash
-git clone https://github.com/KULLANICI_ADIN/pi-voice-ai.git
+git clone https://github.com/erdogankim/pi-voice-ai.git
 cd pi-voice-ai
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
