@@ -1,0 +1,27 @@
+# Pi Voice AI — Python bağımlılıkları
+# Python 3.11+ gerektirir
+
+# Yapay zeka API'leri
+anthropic>=0.39.0
+openai>=1.50.0
+
+# Ses kayıt ve oynatma
+sounddevice>=0.4.6
+numpy>=1.26.0
+pygame>=2.5.0
+soundfile>=0.12.1
+
+# GPIO (sadece Pi'de kurulur)
+gpiozero>=2.0
+RPi.GPIO>=0.7.1; platform_machine == "armv7l" or platform_machine == "aarch64"
+
+# UI
+kivy>=2.3.0
+
+# Yapılandırma ve yardımcılar
+python-dotenv>=1.0.0
+pyyaml>=6.0.1
+
+# Geliştirme (opsiyonel)
+pytest>=8.0.0
+black>=24.0.0

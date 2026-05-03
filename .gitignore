@@ -1,0 +1,31 @@
+# Sırlar
+.env
+*.key
+config/secrets.yaml
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Ses kayıtları (geçici)
+recordings/
+*.wav
+*.mp3
+!docs/**/*.mp3
+
+# Yerel veri
+history.db
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Build
+build/
+dist/
