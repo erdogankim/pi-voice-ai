@@ -27,6 +27,9 @@ data/*.db
 *.swp
 .DS_Store
 
+# Claude Code (yerel)
+.claude/
+
 # Build
 build/
 dist/

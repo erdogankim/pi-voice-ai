@@ -62,6 +62,14 @@ class PathsConfig:
 
 
 @dataclass
+class UIConfig:
+    theme: str = "dark"          # "dark" | "light"
+    font_size: int = 18
+    show_history: bool = True
+    history_limit: int = 50      # max history rows displayed in UI
+
+
+@dataclass
 class Config:
     audio: AudioConfig = field(default_factory=AudioConfig)
     ai: AIConfig = field(default_factory=AIConfig)
@@ -69,6 +77,7 @@ class Config:
     tts: TTSConfig = field(default_factory=TTSConfig)
     button: ButtonConfig = field(default_factory=ButtonConfig)
     paths: PathsConfig = field(default_factory=PathsConfig)
+    ui: UIConfig = field(default_factory=UIConfig)
     anthropic_api_key: str = ""
     openai_api_key: str = ""
     log_level: str = "INFO"
@@ -109,6 +118,7 @@ def load_config(config_file: Optional[Path] = None) -> Config:
         tts=_apply(TTSConfig(), raw.get("tts", {})),
         button=_apply(ButtonConfig(), raw.get("button", {})),
         paths=PathsConfig(data_dir=data_dir, history_db=history_db),
+        ui=_apply(UIConfig(), raw.get("ui", {})),
         anthropic_api_key=os.environ.get("ANTHROPIC_API_KEY", ""),
         openai_api_key=os.environ.get("OPENAI_API_KEY", ""),
         log_level=os.environ.get("LOG_LEVEL", "INFO"),
